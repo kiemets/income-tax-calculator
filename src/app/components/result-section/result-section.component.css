@@ -1,0 +1,14 @@
+mat-card {
+    width: 470px;
+    padding: 10px 20px;
+  }
+
+.row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.label {
+  width: 170px;
+  float: left;
+}

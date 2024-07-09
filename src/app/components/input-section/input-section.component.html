@@ -1,0 +1,17 @@
+<mat-card>
+    <form [formGroup]="inputForm" (ngSubmit)="calculate()">
+      <mat-form-field>
+        <mat-label>Gross Annual Salary</mat-label>
+        <input matInput formControlName="grossSalary"/>
+        <mat-error *ngIf="hasError('required')">
+          Value is required
+        </mat-error>
+        <mat-error *ngIf="hasError('pattern')">
+          Must be an non-negative numeric value
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" [disabled]="isCalculating">
+        Calculate
+      </button>
+    </form>
+</mat-card>

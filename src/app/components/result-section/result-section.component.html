@@ -1,0 +1,20 @@
+<mat-card *ngIf="result$ | async as result">
+    <div class="row">
+        <div class="label">Gross Annual Salary:</div><div>{{ result.grossAnnualSalary | currency }}</div>
+    </div>
+    <div class="row">
+        <div class="label">Gross Monthly Salary:</div><div>{{ result.grossMonthlySalary | currency }}</div>
+    </div>
+    <div class="row">
+        <div class="label">Net Annual Salary:</div><div>{{ result.netAnnualSalary | currency }}</div>
+    </div>
+    <div class="row">
+        <div class="label">Net Monthly Salary:</div><div>{{ result.netMonthlySalary | currency }}</div>
+    </div>
+    <div class="row">
+        <div class="label">Annual Tax Paid:</div><div>{{ result.annualTaxPaid | currency }}</div>
+    </div>
+    <div class="row">
+        <div class="label">Monthly Tax Paid:</div><div>{{ result.monthlyTaxPaid | currency }}</div>
+    </div>
+</mat-card>
